@@ -1,0 +1,45 @@
+Derek Haas
+
+ECE 471 HW #1
+
+1. 
+
+	a) Yes, I would consider an electric tooth brush with an 8-bit PIC16F1516 microcontroller, LED display, i2c pressure sensor and a motor to be an embedded system.
+
+	- Fixed Purpose: An electric tooth brush does have a fixed purpose, to be used to brush ones teeth.  It is a small device that is power efficient.
+
+	- Resource-Constrained: Yes this is resource-constrained.  The microcontroller is very small (8-bit), and has low memory and storage.
+
+	- Real Time Constrained:  It could be argued that it is real time constrained as when you turn on the brush, it should immediately start to turn the motor and turn on the LED display.  The LEDs may also change color based on charging status.
+
+
+	b) I would not classify the iPhone 7 as an embedded system.  A smart phone does more than calls and texts, so it doesn't have a fixed purpose
+
+	- Fixed Purpose:  the iPhone 7 can do a lot more than call or text others.  You can surf the web, play games, access social media, etc.  There is no clear fixed purpose of the iPhone.
+
+	- Resource-Constrained: The resources of the iPhone 7 include a quad-core 64-bit CPU at 2.3GHz, which is not very resource constrained.  The graphics of the iPhone 7 are very powerful, which again, is not resource constrained.
+
+	- Real Time Constrained: The iPhone 7 could be considered real time contrained as many tasks happen in real time.  Your phone can give you notifications, set alarms, timers, etc., that all must be done in real time.
+
+
+2. 
+
+	a) An ARM 1176 in the original Raspberry Pi with 32-bit registers, interger ALU, program counter, and address bus, would be a 32-bit system.  This can be decided by the register and integer ALU size.
+
+	b) A MOS 6502 is considered to be an 8-bit device.  This is because the registers, data bus, and ALU are all 8-bit
+
+
+3. 
+
+	a) One reason to use an ASIC over a microcontroller is that an ASIC could perform faster than a microcontroller.  An ASIC is designed for a specific application, while the microcontroller is a more general integrated circuit, making it able to run faster.
+
+	b) With how quickly embedded systems are being released now, using a microcontroller would be more benefitial than an ASIC as the time to market is much shorter.  An ASIC has to be designed to fit a specific application, whereas the microcontoller already exists and can immediately be implemented.
+
+
+4. 
+	The ARM1176JZF-S letters JZF-S stand for:
+	
+	J: Jazelle - Java
+	Z: Trustzone - security
+	F: Floating Point
+	S: Synthesizable
