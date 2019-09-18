@@ -1,0 +1,16 @@
+*
+sshLogin
+!ece*/
+!*.txt
+!README*
+!*.c
+!*.cu
+!*.h
+!*.jpg
+HELP*
+!lecture_code/
+!lecture_code/**
+!homeworks/
+!homeworks/**
+!*.pdf
+!.gitignore
