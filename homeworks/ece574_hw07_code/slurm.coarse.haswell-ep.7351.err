@@ -1,0 +1,5 @@
+slurmstepd-haswell-ep: error: execve(): /shared/home/ece574-6/ece574_hw07_code/./sobel_coarse: No such file or directory
+slurmstepd-haswell-ep: error: execve(): /shared/home/ece574-6/ece574_hw07_code/./sobel_coarse: No such file or directory
+slurmstepd-haswell-ep: error: execve(): /shared/home/ece574-6/ece574_hw07_code/./sobel_coarse: No such file or directory
+slurmstepd-haswell-ep: error: execve(): /shared/home/ece574-6/ece574_hw07_code/./sobel_coarse: No such file or directory
+srun: error: haswell-ep: tasks 0-3: Exited with exit code 2

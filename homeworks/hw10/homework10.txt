@@ -1,0 +1,93 @@
+ECE 574 Homework 10
+Name: Derek Haas
+
+3.
+
+
+	1
+		Energy: 60.29 (Joules)                                           
+		Time: 1.391179064 (seconds)
+		Energy Delay: 83.87 (Joules*second)
+		Energy Delay Squared: 116.68 (Joules*second^2)
+
+	2
+	        Energy: 56.40 (Joules)                   
+                Time:  1.385099423 (seconds)             
+                Energy Delay: 78.12 (Joules*second)
+                Energy Delay Squared: 108.20 (Joules*second^2)
+
+	4
+	        Energy: 49.42 (Joules)                   
+                Time:  1.006628832 (seconds)             
+                Energy Delay: 49.75 (Joules*second)
+                Energy Delay Squared: 50.08 (Joules*second^2)
+
+	8
+	        Energy: 55.57 (Joules)                   
+                Time:  1.019667762 (seconds)             
+                Energy Delay: 56.66 (Joules*second)
+                Energy Delay Squared: 57.78 (Joules*second^2)
+
+	16
+	        Energy: 64.53 (Joules)                  
+                Time:  0.862260194 (seconds)             
+                Energy Delay: 55.64 (Joules*second)
+                Energy Delay Squared: 47.78 (Joules*second^2)
+
+	32
+	        Energy: 57.91 (Joules)                   
+                Time:  0.682176831 (seconds)             
+                Energy Delay: 39.5 (Joules*second)
+                Energy Delay Squared: 26.95 (Joules*second^2)
+
+	a)
+		4 Threads used the least amount of Energy.
+
+	b)
+		Using 32 Threads reported the fastest time.
+
+	c)
+		Yes it does.  When using 32 threads the computing time was fastest as was the
+		energy delay and energy delay squared, yet the total energy that was used was
+		one of the highest measured.
+
+4. 
+
+	OpenMP
+	        Energy: 49.42 (Joules)                   
+                Time:  1.006628832 (seconds)             
+                Energy Delay: 49.75 (Joules*second)
+                Energy Delay Squared: 50.08 (Joules*second^2)
+
+	OpenCL
+	        Energy: 36.90 (Joules)                   
+                Time:  0.846881361 (seconds)             
+                Energy Delay: 31.25 (Joules*second)
+                Energy Delay Squared: 26.46 (Joules*second^2)
+		
+	a)
+		The OpenCL code did better on the energy related metrics.  The total energy used was
+		lower than OpenMP as was the compute time.  Because both of these are lower, the energy
+		delay and energy delay squared are both lower than the OpenMP measurements.
+
+5. 
+
+
+	NVIDIA
+		Energy Delay: 63.5*2.07 = 131.445 (Joules*second)
+		Energy Delay Squared: 131.445*2.07 = 272.09 (Joules*second^2)
+
+	Intel
+		Energy Delay: 91.7*2.54 = 232.918 (Joules*second)
+		Energy Delay Squared: 232.918*2.54 = 591.61 (Joules*second^2)
+	
+	POCL	
+		Energy Delay: 122*3.00 = 366 (Joules*second)
+		Energy Delay Squared: 366*3.00 = 1098 (Joules*second^2)
+
+	a)
+		I would choose to use the NVIDIA OpenCL backend.  This is because NVIDIA used the least
+		amount of total energy and the energy delay and energy delay squared were far smaller
+		than the other two backends.
+
+

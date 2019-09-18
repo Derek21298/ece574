@@ -1,0 +1,22 @@
+Number of tasks: 4 	My Rank: 2
+Number of tasks: 4 	My Rank: 0
+output_width=4288, output_height=2929, output_components=3
+Number of tasks: 4 	My Rank: 1
+Number of tasks: 4 	My Rank: 3
+Rank: 1 	 ystart: 732	 yend: 1464
+Rank: 2 	 ystart: 1464	 yend: 2196
+Rank: 0 	 ystart: 0	 yend: 732
+Rank: 3 	 ystart: 2196	 yend: 2929
+RANK: 3 	I MADE IT AFTER SOBEL X
+RANK: 1 	I MADE IT AFTER SOBEL X
+RANK: 2 	I MADE IT AFTER SOBEL X
+RANK: 0 	I MADE IT AFTER SOBEL X
+RANK: 3 	I MADE IT AFTER SOBEL Y
+RANK: 1 	I MADE IT AFTER SOBEL Y
+RANK: 2 	I MADE IT AFTER SOBEL Y
+RANK: 0 	I MADE IT AFTER SOBEL Y
+Load time: 0.162447
+Convolve time: 0.287831
+Combine time: 0.303533
+Store time: 0.086861
+Total time = 0.840671

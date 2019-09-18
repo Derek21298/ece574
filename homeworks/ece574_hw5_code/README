@@ -1,0 +1,116 @@
+ECE574 Spring 2019 Homework #5
+
+Name: Derek Haas
+
+Results:
+
+3.  
+
+	space_station_hires.jpeg using sobel_coarse:
+
+	real	0m1.329s
+	user	0m2.323s
+	sys	0m0.051s
+
+	space_station_hires.jpeg using sobel_before:
+
+	real	0m1.578s
+	user	0m1.507s
+	sys	0m0.048s
+
+4. 
+
+	space_station_hires.jpeg using sobel_coarse:	
+
+	JPEG Load Time:		164914 us
+	Convolution Time:	755283 us
+	Combine Time: 		274921 us
+	JPEG Store Time:	114963 us
+
+	space_station_hires.jpeg using sobel_before:
+
+	JPEG Load Time:		163767 us
+	Convolution Time:	1137449 us
+	Combine Time:	 	184679 us
+	JPEG Store Time:	88513 us
+
+	Speedup and Parallel Efficency Calculations for the Convolution
+
+	Threads = 2, Ts = 1137449 us, Tp = 775283 us
+	Sp = Ts / Tp = (1137449 / 775283) = 1.51
+	Ep = Sp / Threads = (1.51 / 2) = 0.753
+
+
+5. 
+	Threads = 1
+	JPEG Load Time:		137838 us
+	Convolution Time:	871887 us
+	Combine Time: 		289490 us
+	JPEG Store Time:	88929 us
+	real	0m1.393
+	user 	0m1.345
+	sys	0m0.048
+
+	Threads = 2
+	JPEG Load Time:		103732 us
+	Convolution Time:	538096 us
+	Combine Time: 		550631 us
+	JPEG Store Time:	192009 us
+	real	0m1.390
+	user 	0m1.309
+	sys	0m0.064
+
+	Threads = 4
+	JPEG Load Time:		170124 us
+	Convolution Time:	279798 us
+	Combine Time: 		548653 us
+	JPEG Store Time:	180286 us
+	real	0m1.184
+	user 	0m3.344
+	sys	0m0.108
+
+	Threads = 8
+	JPEG Load Time:		105326 us
+	Convolution Time:	194694 us
+	Combine Time: 		580669 us
+	JPEG Store Time:	121037 us
+	real	0m1.007
+	user 	0m5.770
+	sys	0m0.137
+	
+	Threads = 16
+	JPEG Load Time:		176924 us
+	Convolution Time:	105977 us
+	Combine Time: 		549668 us
+	JPEG Store Time:	115675 us
+	real	0m0.954
+	user 	0m9.590
+	sys	0m0.344
+
+	Threads = 32
+	JPEG Load Time:		168114 us
+	Convolution Time:	110454 us
+	Combine Time: 		402235 us
+	JPEG Store Time:	102846 us
+	real	0m0.789
+	user 	0m13.518
+	sys	0m2.866
+
+	When the scheduler was changed to dynamic vs static for the 16
+	thread case, the real time increased as did the convolution
+	and combine time. 
+
+
+Describe something cool:
+
+
+	I added the simd option in my finely threaded code.
+
+	Threads = 8
+	JPEG Load Time:		170973 us
+	Convolution Time:	155347 us
+	Combine Time: 		508263 us
+	JPEG Store Time:	149136 us
+	real	0m0.989
+	user 	0m5.153
+	sys	0m0.115

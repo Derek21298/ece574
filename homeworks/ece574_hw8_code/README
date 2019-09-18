@@ -1,0 +1,38 @@
+ECE574 Spring 2019 Homework #8
+
+Name: Derek Haas
+
+
+3.
+	coarse timing results:
+
+	Load time: 103803
+	Convolve time: 1325000
+	Copy host to device: 10400
+	Combine time: 44
+	Copy device to host: 58875
+	Store time: 88142	
+	Total time: 1586336
+	
+4.
+	fine_timing results:
+
+	Load time: 99555
+	Copy host to device: 5924
+	Convolve time: 188182 
+	Combine time: 9
+	Copy device to host: 106196
+	Store time: 115358	
+	Total time: 509320
+
+
+	Which was faster, CPU or GPU?
+
+	The GPU was significantly faster than the CPU.  The total time the space station
+	convolution took using OpenMP at 16 threads was 789ms while the GPU only took
+	509320us.  The convolution was a little slower on the GPU at 188182us while the 
+	convolution time on the CPU was 105977us.  However, the combine time on the GPU 
+	was a lot faster.  The combine time on the GPU was 9us while it was 549668us on
+	the CPU.
+
+	Overall, the GPU was faster than the CPU.

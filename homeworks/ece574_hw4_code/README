@@ -1,0 +1,74 @@
+ECE574 Spring 2019 Homework #4
+
+Name: Derek Haas
+
+Answer to question:
+
+3. 
+     Coarse-grained Parallel Code
+
+     real 0m1.196s
+     user 0m1.814s
+     sys  0m0.024s
+ 
+     My single threaded code
+
+     real 0m1.419s
+     user 0m1.329s
+     sys  0m0.052s
+
+4. 
+     Total Convolution Time: 733486 us
+     Combine time: 246122 us
+     JPEG Load Time: 133140 us
+     JPEG Store Time: 115062 us
+
+5. 
+
+     *NOTE* I am using a define to set my number of threads
+
+     Threads: 1 
+     Total Convolution Time: 1311228 us
+     Combine time: 310960 us
+     JPEG Load Time: 9910 us
+     JPEG Store Time: 114925 us     
+     real 0m1.890s 
+     user 0m1.804s
+     sys  0m0.052s
+
+     Threads: 2
+     Total Convolution Time: 718363 us
+     Combine time: 315157 us
+     JPEG Load Time: 99151 us
+     JPEG Store Time: 115443 us
+     real 0m1.302s
+     user 0m1.871s
+     sys  0m0.048s
+     
+     Threads: 4
+     Total Convolution Time: 285176 us
+     Combine time: 295390 us
+     JPEG Load Time: 99715 us
+     JPEG Store Time: 115038 us
+     real 0m0.850s
+     user 0m1.538s
+     sys  0m0.080s
+     
+     Threads: 8
+     Total Convolution Time: 213026 us
+     Combine time: 254483 us
+     JPEG Load Time: 163158 us
+     JPEG Store Time: 115413 us
+     real 0m0.802s
+     user 0m1.844s
+     sys  0m0.064s
+
+6. 
+
+     With this code, it appears that the program may end
+     up locking up as the mutexes are nested in a way that
+     will cause both threads to get stuck.  Depending on 
+     the order than these locks occur, 1 and 2 may both be
+     locked at the same time creating a "Deadlock".
+
+

@@ -1,0 +1,47 @@
+ECE574 Spring 2019 Homework #9
+
+Name: Derek Haas
+
+
+Timing on NVIDIA GPU:
+
+	Load time: 98577
+	Convolve time: 48750
+	Copy time: 25686
+	Combine time: 57572
+	Store time: 113865
+	Total time = 572338
+
+Timing on Intel-optimized CPU:
+
+	Load time: 162709
+	Convolve time: 36959
+	Copy time: 33381
+	Combine time: 43344
+	Store time: 115730
+	Total time = 848900
+
+Timing on portable POCL driver:
+
+	Load time: 165319
+	Convolve time: 63814
+	Copy time: 39480
+	Combine time: 76645
+	Store time: 133061
+	Total time = 594633
+
+Timing of your CUDA code:
+
+	Load time: 120402
+	Copy host to device: 6053
+	Convolve time: 204218
+	Combine time: 7
+	Copy device to host: 108422
+	Store time: 113145
+	Total time = 546208
+
+Question:  Which ran faster and why?
+
+The CUDA code ran the fastest.  This is because CUDA is optimized for NVIDIA while OpenCL is not.
+Since CUDA is only for NVIDIA, its code must run faster than OpenCL since OpenCL can handle different
+GPUs.

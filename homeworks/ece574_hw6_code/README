@@ -1,0 +1,56 @@
+ECE574 Spring 2019 Homework #6
+
+Name: Derek Haas
+
+3.
+
+	m5dsum for both butterfinger and space station do not match.
+	Butterfinger looks correct (maybe 1 line is off??)
+	space station is convolved but is slanted.
+
+	Results (time, speedup, parallel efficiency)
+
+	1: 	Load time: 0.105018
+		Convolve time: 1.158595
+		Combine time: 0.267453
+		Store time: 0.088438
+		Total time: 1.1619503
+
+		Speedup: N/A
+		Parallel Efficency: N/A
+
+	2: 	Load time: 0.127404
+		Convolve time: 0.643259
+		Combine time: 0.310389
+		Store time: 0.088639
+		Total time: 1.169691
+	
+		Speedup: 1.1619503 / 1.169691 = 0.99338
+		Parallel Efficency: 0.99338 / 2 = 0.49669
+	
+	4: 	Load time: 0.110547
+		Convolve time: 0.298662
+		Combine time: 0.359182
+		Store time: 0.111414
+		Total time: 0.879806
+	
+		Speedup: 1.1619503 / 0.879806 = 1.32069
+		Parallel Efficency: 1.32069 / 4 = 0.330172
+	
+	8: 	Load time: 0.099646
+		Convolve time: 0.189946
+		Combine time: 0.355407
+		Store time: 0.114859
+		Total time: 0.759858
+	
+		Speedup: 1.1619503 / 0.759858 = 1.529167
+		Parallel Efficency: 1.529167 / 8 = 0.191146
+	
+	16: 	Load time: 0.167708
+		Convolve time: 0.187403
+		Combine time: 0.503284
+		Store time: 0.115374
+		Total time: 0.973769
+			
+		Speedup: 1.1619503 / 0.973769 = 1.19325
+		Parallel Efficency: 1.19325 / 16 = 0.074578
